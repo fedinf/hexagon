@@ -4,7 +4,7 @@
 !dist/**/*
 !definitions/
 !definitions/*
-!*.ts
-!lib/*.ts
-!package.json
-!*.md
+*.ts
+lib/*.ts
+package.json
+*.md

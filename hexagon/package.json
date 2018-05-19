@@ -1,11 +1,11 @@
 {
-  "name": "hexagon-arch",
+  "name": "hexagon",
   "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": ""
   },
-  "main": "dist/index.js",
+  "main": "build/index.js",
   "typings": "definitions/index",
   "typescript": {
     "definition": "definitions/index"
@@ -13,17 +13,17 @@
   "description": "Test",
   "engineStrict": true,
   "devDependencies": {
+    "@types/node": "^10.1.2",
+    "gts": "^0.6.0",
     "ts-node": "^6.0.3",
-    "typescript": "~2.8.0",
-    "gts": "^0.6.0"
+    "typescript": "~2.8.0"
   },
   "scripts": {
-    "test": "gulp test",
     "release": "standard-version",
-    "check": "gts check",
-    "clean": "gts clean",
-    "compile": "tsc -p .",
-    "fix": "gts fix",
+    "check": "npx gts check",
+    "clean": "npx gts clean",
+    "compile": "npx tsc -p .",
+    "fix": "npx gts fix",
     "prepare": "npm run compile",
     "pretest": "npm run compile",
     "posttest": "npm run check"

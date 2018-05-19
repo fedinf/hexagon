@@ -1,0 +1,1 @@
+{"version":3,"file":"Checker.js","sourceRoot":"","sources":["../../src/Checker.ts"],"names":[],"mappings":";;AAGA;IAII,YAAY,YAA0B,EAAE,aAA4B;QAChE,IAAI,CAAC,YAAY,GAAG,YAAY,CAAC;QACjC,IAAI,CAAC,aAAa,GAAG,aAAa,CAAC;IACvC,CAAC;IAEM,KAAK;QACR,OAAO,CAAC,GAAG,CAAC,OAAO,CAAC,CAAC;IACzB,CAAC;CACJ;AAZD,0BAYC"}
