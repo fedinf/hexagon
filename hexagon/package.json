@@ -1,0 +1,34 @@
+{
+  "name": "hexagon-arch",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "main": "dist/index.js",
+  "typings": "definitions/index",
+  "typescript": {
+    "definition": "definitions/index"
+  },
+  "description": "Test",
+  "engineStrict": true,
+  "devDependencies": {
+    "ts-node": "^6.0.3",
+    "typescript": "~2.8.0",
+    "gts": "^0.6.0"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "release": "standard-version",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run check"
+  },
+  "author": "Federico Infanti <hello@example.com>",
+  "license": "MIT",
+  "dependencies": {}
+}

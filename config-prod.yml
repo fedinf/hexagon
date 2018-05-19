@@ -1,0 +1,3 @@
+services:
+  main:
+    domain: http://www.example.com

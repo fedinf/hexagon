@@ -1,0 +1,36 @@
+domain:
+  root_dir: Domain
+  meta_dir: _meta
+  port_dir: Port
+  public_services: public_services.yml
+  adapters: public_services.yml
+  default_boundary_proxy: vendor/hexagon/proxy/boundaryProxy
+
+console:
+  meta_dir: _meta
+  project:
+    root_path: Domain
+  di:
+    public: DI/di.public.yml
+    private: DI/di.private.yml
+  entities:
+    path: Entity
+  public_interfaces:
+    path: Adapter
+  rules:
+    path: Rule
+    api:
+      enabled: true
+      web-path: api/
+
+master-components:
+  console:
+    service: main
+    project:
+      root: Console
+
+slave-component:
+  persistency:
+    service: main
+    project:
+      root: Persistency
